@@ -38,7 +38,7 @@ module Net; module SSH
   # option to Net::SSH.start. (They are, by default.)
   class Config
     class << self
-      @@default_files = %w(~/.ssh/config /etc/ssh_config /etc/ssh/ssh_config)
+      @@default_files = %w(~/.ssh/config /etc/ssh_config /etc/ssh/ssh_config %userprofile%//.ssh//config)
       # The following defaults follow the openssh client ssh_config defaults.
       # http://lwn.net/Articles/544640/
       # "hostbased" is off and "none" is not supported but we allow it since
